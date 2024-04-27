@@ -34,7 +34,7 @@ if (isset($_POST['txt_login'])) {
             $_SESSION['user_id'] = $ligne_utilisateur["id_utilisateur"];
             $_SESSION['login_u'] = $ligne_utilisateur["email_u"];
             $_SESSION['user_type'] = $ligne_utilisateur["role_u"];
-            header("Location: content.php");
+            header("Location: index.php");
         }
     } else {
         echo "Login ou mot de passe incorrect !!!!";
